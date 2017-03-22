@@ -1,7 +1,7 @@
 import sys
 import json
 
-filepath = 'Tapajit_output'
+filepath = 'index.json'
 inputlist = sys.argv[1:]
 
 with open(filepath, 'r') as data_file:
