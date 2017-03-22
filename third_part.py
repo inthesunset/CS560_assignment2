@@ -11,7 +11,7 @@ for oneword in inputlist:
     if oneword not in data.keys():
         print(oneword + " can't be found in dataset")
         continue
-    print("word" + '\"'+oneword+'\" are found in these places:')
+    print("word" + ' \"'+oneword+'\" are found in these places:')
     for anyone in data[oneword].keys():
         print('document id:' + '\t' +
               anyone)
