@@ -12,7 +12,10 @@ for oneword in inputlist:
         print(oneword + " can't be found in dataset")
         continue
     print("word \"oneword\" are found in these places:")
-    for anyone in data[oneword]:
+    for anyone in data[oneword].keys():
         print('document id:' + '\t' +
-              anyone[0] + '\t' + 'line number:' + str(anyone[1]))
+              anyone[0])
+        for line_col in data[oneword][anyone]:
+            print('line number:' + str(line_col[0]))
+        
     print("********************************************")
